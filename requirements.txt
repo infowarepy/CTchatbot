@@ -1,0 +1,5 @@
+flask
+openai
+speech_recognition
+sqlite3
+sentiment
