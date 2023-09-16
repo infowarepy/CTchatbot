@@ -4,3 +4,4 @@ SpeechRecognition
 db-sqlite3
 sentiment
 python-sentiment
+gunicorn
