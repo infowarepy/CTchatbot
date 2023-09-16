@@ -3,12 +3,12 @@ import openai
 import speech_recognition as sr
 import sqlite3
 from sentiment import analyze_emotion 
+from config import SECRET_KEY
 
 app = Flask(__name__, static_folder='static')
 
 #api key generated on 16-09-2023
-# openai.api_key = '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'
-openai.api_key='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' #rachitavya
+openai.api_key = SECRET_KEY
 
 
 DATABASE = 'conversation.db' # to store chats temporarily
