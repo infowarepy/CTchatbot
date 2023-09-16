@@ -3,11 +3,12 @@ import openai
 import speech_recognition as sr
 import sqlite3
 from sentiment import analyze_emotion 
-from config import SECRET_KEY
+import os
 
 app = Flask(__name__, static_folder='static')
 
 #api key generated on 16-09-2023
+SECRET_KEY = os.environ.get('SECRET_KEY')
 openai.api_key = SECRET_KEY
 
 
