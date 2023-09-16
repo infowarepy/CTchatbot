@@ -1,5 +1,6 @@
 flask
 openai
 SpeechRecognition
-sqlite3
+db-sqlite3
 sentiment
+python-sentiment
