@@ -1,6 +1,7 @@
 import openai
+from config import SECRET_KEY
 
-openai.api_key = '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'
+openai.api_key = SECRET_KEY
 
 def analyze_emotion(prompt):
     response = openai.Completion.create(
