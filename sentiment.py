@@ -1,6 +1,7 @@
 import openai
-from config import SECRET_KEY
+import os
 
+SECRET_KEY = os.environ.get('SECRET_KEY')
 openai.api_key = SECRET_KEY
 
 def analyze_emotion(prompt):
